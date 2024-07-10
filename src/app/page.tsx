@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+
 
 export default function Home() {
   return (
@@ -8,6 +10,7 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className="font-mono font-bold">src/app/page.tsx</code>
         </p>
+        
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
@@ -25,6 +28,7 @@ export default function Home() {
               priority
             />
           </a>
+          
         </div>
       </div>
 
@@ -107,7 +111,15 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
+        
       </div>
+      <Alert>
+  <div className="h-4 w-4" />
+  <AlertTitle>Heads up!</AlertTitle>
+  <AlertDescription>
+    You can add components and dependencies to your app using the cli.
+  </AlertDescription>
+</Alert>
     </main>
   );
 }
