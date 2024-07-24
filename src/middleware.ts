@@ -4,7 +4,7 @@ import {
 } from '@clerk/nextjs/server';
 
 const isProtectedRoute = createRouteMatcher([
-  '/site', '/api/uploadthing'
+  "/site", '/api/uploadthing'
 ]);
 
 export default clerkMiddleware((auth, req) => {
