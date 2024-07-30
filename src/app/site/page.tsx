@@ -9,9 +9,6 @@ export default function Home() {
   <h1 className="text-9xl font-bold text-center md:text-[300px]">Plura</h1>
 </div>
 </section>
-      
-
-
-    </>
+      </>
   );
 }
